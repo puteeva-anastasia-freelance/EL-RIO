@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>ElRio - Арендаторам</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;display=swap&amp;subset=cyrillic-ext">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="svg-sprite">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol viewBox="0 0 104.834 103.315" fill="none" stroke-width="2.835" id="icon-sale">
+                <path d="M 0.00086875 -0.00126875 L 12.891494 -15.352831 L 32.633681 -11.876269 L 32.641494 -31.92705 L 50.000869 -41.954394 L 37.118056 -57.317675 L 43.969619 -76.157519 L 24.227431 -79.6458 L 17.36415 -98.481737 L 0.00086875 -88.462206 L -17.366319 -98.481737 L -24.225694 -79.6458 L -43.967881 -76.157519 L -37.116319 -57.317675 L -49.999131 -41.954394 L -32.639756 -31.92705 L -32.63585 -11.876269 L -12.889756 -15.352831 Z M 0.00086875 -0.00126875 "
+                transform="matrix(1,0,0,-1,52.4171,2.4167)" />
+                <path d="M -0.0008125 -0.00093125 L 36.346844 36.346725 " transform="matrix(1,0,0,-1,34.243,69.8311)" />
+                <path d="M 0.00029375 0.00129375 C 5.523731 0.00129375 10.000294 -4.475269 10.000294 -9.998706 C 10.000294 -15.522144 5.523731 -19.998706 0.00029375 -19.998706 C -5.523144 -19.998706 -9.999706 -15.522144 -9.999706 -9.998706 C -9.999706 -4.475269 -5.523144 0.00129375 0.00029375 0.00129375 Z M 0.00029375 0.00129375 "
+                transform="matrix(1,0,0,-1,40.3083,30.0052)" />
+                <path d="M 0.000675 0.00159375 C 5.524113 0.00159375 10.000675 -4.478875 10.000675 -9.998406 C 10.000675 -15.521844 5.524113 -19.998406 0.000675 -19.998406 C -5.522762 -19.998406 -9.999325 -15.521844 -9.999325 -9.998406 C -9.999325 -4.478875 -5.522762 0.00159375 0.000675 0.00159375 Z M 0.000675 0.00159375 "
+                transform="matrix(1,0,0,-1,63.6712,53.2555)" />
+            </symbol>
+            <symbol viewBox="0 0 101.831 73.1315" stroke-width="2.835" id="icon-card">
+                <path stroke="none" d="M 2.085938 15.585938 L 100.3125 15.585938 L 100.3125 30.414063 L 2.085938 30.414063 Z M 2.085938 15.585938 " />
+                <path fill="none" d="M -0.00098125 -0.00056875 L 89.182613 -0.00056875 C 91.33105 -0.00056875 93.088863 -1.758381 93.088863 -3.906819 L 93.088863 -64.387288 C 93.088863 -66.535725 91.327144 -68.297444 89.182613 -68.297444 L -0.00098125 -68.297444 C -2.149419 -68.297444 -3.907231 -66.539631 -3.907231 -64.387288 L -3.907231 -3.906819 C -3.907231 -1.758381 -2.149419 -0.00056875 -0.00098125 -0.00056875 Z M -0.00098125 -0.00056875 "
+                transform="matrix(1,0,0,-1,6.3252,2.4174)" />
+                <path stroke="none" d="M 54.820313 40.433594 C 54.820313 38.84375 53.8125 37.550781 52.566406 37.550781 L 10.519531 37.550781 C 9.273438 37.550781 8.265625 38.84375 8.265625 40.433594 C 8.265625 41.230469 8.515625 41.953125 8.925781 42.472656 C 9.332031 42.996094 9.894531 43.316406 10.519531 43.316406 L 52.566406 43.316406 C 53.8125 43.316406 54.820313 42.027344 54.820313 40.433594 "
+                />
+            </symbol>
+            <symbol viewBox="0 0 160 160" fill="none" stroke-width="4.331" id="icon-share">
+                <path d="M80.1,3.7c42.2,0,76.4,34.2,76.4,76.4c0,42.2,-34.2,76.4,-76.4,76.4C37.9,156.5,3.7,122.3,3.7,80.1C3.7,37.9,37.9,3.7,80.1,3.7Zm-33.4,67L92.4,48M50.5,84.6l43.9,22.3M106.5,29.8c8.5,0,15.3,6.8,15.3,15.2c0,8.5,-6.8,15.3,-15.3,15.3C98.1,60.3,91.2,53.5,91.2,45c0,-8.4,6.9,-15.2,15.3,-15.2Zm0,69.9c8.5,0,15.3,6.8,15.3,15.3c0,8.4,-6.8,15.2,-15.3,15.2c-8.4,0,-15.3,-6.8,-15.3,-15.2c0,-8.5,6.9,-15.3,15.3,-15.3ZM35.5,64.8c8.4,0,15.3,6.8,15.3,15.3c0,8.4,-6.9,15.3,-15.3,15.3C27,95.4,20.2,88.5,20.2,80.1C20.2,71.6,27,64.8,35.5,64.8Z"
+                />
+            </symbol>
+            <symbol viewBox="0 0 155 155" fill="none" stroke-width="4.331" id="icon-print">
+                <path d="M26.3,22.3V9.7c0,-3.3,2.7,-6,5.9,-6h90.7c3.3,0,6,2.7,6,6V50.8c0,3.3,-2.7,6,-6,6H32.2c-3.2,0,-5.9,-2.7,-5.9,-6ZM3.7,99.6V55.9c0,-7.6,5.7,-14,13,-15.1h9.6v10c0,3.3,2.7,6,5.9,6h90.7c3.3,0,6,-2.7,6,-6V40.7h7.8c8.2,.3,14.8,7,14.8,15.2V99.6c0,8.2,-6.5,14.9,-14.6,15.3h-8c0,-5.3,0,-10.7,0,-16c0,-3.2,-2.7,-5.9,-6,-5.9H32.2c-3.2,0,-5.9,2.6,-5.9,5.9v15.9H16.7C9.4,113.6,3.7,107.3,3.7,99.6Z"
+                />
+                <path stroke-linejoin="round" d="M26.3,98.9C26.3,95.6,29,93,32.2,93h90.7c3.3,0,6,2.7,6,5.9c0,12.5,.2,25,.2,37.7c0,8.4,6.8,15.3,15.2,15.3H41.7c-8.4,0,-15.3,-6.9,-15.3,-15.3v-3c-.1,-.4,-.1,-.9,-.1,-1.4c0,-12.3,0,-21.4,0,-33.3Z" />
+                <path stroke-linecap="round" d="M44.5,105.7h66.2M44.5,125.1h66.2" />
+            </symbol>
+            <symbol viewBox="0 0 24 18" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" id="icon-search">
+                <path fill-rule="evenodd" stroke="rgb(151, 27, 47)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M17.791,15.133 C14.290,16.895 10.036,15.876 7.778,12.905 L2.403,15.611 L1.007,13.084 L6.522,10.307 C5.667,7.035 7.195,3.509 10.460,1.865 C14.298,-0.067 19.051,1.336 21.075,5.000 C23.100,8.664 21.629,13.200 17.791,15.133 Z"
+                />
+                <path fill="none" stroke="rgb(151, 27, 47)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" d="M17.791,15.133 C14.290,16.895 10.036,15.876 7.778,12.905 L2.403,15.611 L1.007,13.084 L6.522,10.307 C5.667,7.035 7.195,3.509 10.460,1.865 C14.298,-0.067 19.051,1.336 21.075,5.000 C23.100,8.664 21.629,13.200 17.791,15.133 Z"
+                />
+            </symbol>
+            <symbol viewBox="0 0 1000 1000" stroke="none" id="icon-youtube">
+                <path d="M175.1,34.8h73.5l9.5,37.8l8,27.9l6.5,27.4l6.5,28.5l5.1,23.9h2.9l5.1-23.9l5.8-28.5l7.3-27.4l7.3-27.9l10.2-37.8h71.3l-75.7,227v161.2h-67.7V261.8L175.1,34.8z" />
+                <path d="M485.1,130.3c57.5,0,86.6,27.4,86.6,81.5v133.9c0,54.1-29.1,81.5-86.6,81.5c-57.5,0-86.6-27.4-86.6-81.5V211.7C398.5,157.6,427.6,130.3,485.1,130.3z M485.1,176.8c-15.3,0-23.3,9.3-23.3,26.8v150.2c0,16.9,8.7,26.8,23.3,26.8c14.6,0,23.3-9.9,23.3-26.8V203.6C508.4,186.1,499.7,176.8,485.1,176.8z"
+                />
+                <path d="M752.2,423.1l-5.1-25c-26.2,21.5-41.5,29.1-59.7,29.1c-15.3,0-31.3-7-38.6-16.3c-8-9.9-10.2-20.4-10.2-50.1v-227h63.3V359c0,14.6,5.1,21.5,16.7,21.5c8,0,15.3-2.9,28.4-11.6V133.7h63.3v289.3H752.2z" />
+                <path d="M180.5,475.8C86.4,475.8,10,552.2,10,646.3v148.6c0,94.1,76.4,170.3,170.5,170.3h639c94.1,0,170.5-76.2,170.5-170.3V646.3c0-94.1-76.4-170.5-170.5-170.5L180.5,475.8L180.5,475.8z M101.7,541.4H281v45.9h-60.2v307.1h-61.5V587.3h-57.6V541.4z M509.9,541.4h57.5v114.8c22.5-20.1,37.7-28.1,54.9-28.1c13.2,0,27.8,6.4,34.4,14.9c7.3,9.5,9.3,19.1,9.3,47.1v146c0,27.5-2,37-9.3,46.5c-6.6,9-21.1,15.3-35,15.3c-17.2,0-31.8-7.9-54.3-28.5v24.9h-57.5V541.4L509.9,541.4z M806.3,628.1c47.6,0,77.3,24.8,77.3,65.6V771h-99.8v57.6c0,19.1,5.9,27,21.2,27c7.3,0,13.8-3.2,17.1-8c3.3-4.8,4.1-10.5,4.1-29.6v-15.9h57.5v9.6c0.6,6.9,0.7,11.6,0.7,14.3c0,46.6-28.5,71.9-80.7,71.9c-49.6,0-77.4-26.4-77.4-74V701.7C726.2,651.9,752.7,628.1,806.3,628.1L806.3,628.1z M291.5,631.3h57.6v204.9c0,13.2,4.6,19.5,15.2,19.5c7.3,0,13.9-2.6,25.8-10.5V631.3h57.6v263.1h-53l-4.7-22.8C366.3,891.1,352.5,898,336,898c-13.9,0-28.5-6.2-35.1-14.7c-7.3-9-9.3-18.6-9.3-45.6L291.5,631.3L291.5,631.3z M593.2,670.5c-7.3,0-13.9,2.7-25.8,10.6v164c11.9,7.9,18.5,10.5,25.8,10.5c10.6,0,15.3-6.3,15.3-19.5v-146C608.5,676.4,603.8,670.5,593.2,670.5z M805,670.5c-13.2,0-21.2,6.9-21.2,19v44.4h42.3v-44.4C826.1,677.4,818.2,670.5,805,670.5z"
+                />
+            </symbol>
+            <symbol viewBox="0 0 320 512" stroke="none" id="icon-facebook">
+                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+            </symbol>
+            <symbol viewBox="0 0 448 512" stroke="none" id="icon-instagram" preserveAspectRatio="xMidYMid">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+            </symbol>
+            <symbol viewBox="0 0 576 512" stroke="none" id="icon-vkontakte">
+                <path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"
+                />
+            </symbol>
+            <symbol viewBox="0 0 512 512" stroke="none" id="icon-twitter">
+                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                />
+            </symbol>
+            <symbol viewBox="0 0 512 512" stroke="none" id="icon-clock">
+                <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+            </symbol>
+            <symbol viewBox="0 0 320 512" stroke="none" id="icon-mobile">
+                <path fill="currentColor" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"></path>
+            </symbol>
+            <symbol viewBox="0 0 320 512" stroke="none" id="icon-cursor">
+                <path d="M302.189 329.126H196.105l55.831 135.993c3.889 9.428-.555 19.999-9.444 23.999l-49.165 21.427c-9.165 4-19.443-.571-23.332-9.714l-53.053-129.136-86.664 89.138C18.729 472.71 0 463.554 0 447.977V18.299C0 1.899 19.921-6.096 30.277 5.443l284.412 292.542c11.472 11.179 3.007 31.141-12.5 31.141z"></path>
+            </symbol>
+            <symbol viewBox="0 0 121 151" stroke="none" id="icon-map">
+                <path d="M86.116,90.955 C106.724,95.976 121.000,106.870 121.000,119.500 C121.000,136.897 93.913,151.000 60.500,151.000 C27.087,151.000 0.000,136.897 0.000,119.500 C0.000,106.544 15.023,95.415 36.494,90.577 C36.937,92.502 36.919,92.663 37.456,95.321 C18.322,99.469 5.000,108.735 5.000,119.500 C5.000,134.136 29.624,146.000 60.000,146.000 C90.376,146.000 115.000,134.136 115.000,119.500 C115.000,109.233 102.883,100.331 85.164,95.930 C85.456,93.641 85.837,92.559 86.116,90.955 Z"
+                />
+                <path d="M61.472,60.492 C56.437,60.492 52.140,58.554 48.578,54.676 C45.017,50.798 43.236,46.119 43.236,40.638 C43.236,35.159 45.017,30.479 48.578,26.601 C52.140,22.723 56.437,20.784 61.472,20.784 C66.505,20.784 70.803,22.723 74.365,26.601 C77.926,30.479 79.707,35.159 79.707,40.638 C79.707,46.119 77.926,50.798 74.365,54.676 C70.803,58.554 66.505,60.492 61.472,60.492 ZM87.258,12.564 C80.135,4.808 71.539,0.930 61.472,0.930 C51.403,0.930 42.808,4.808 35.685,12.564 C28.562,20.319 25.000,29.678 25.000,40.638 C25.000,46.274 25.784,50.902 27.351,54.521 L53.351,114.548 C54.063,116.254 55.167,117.598 56.663,118.581 C58.159,119.562 59.762,120.054 61.472,120.054 C63.181,120.054 64.784,119.562 66.280,118.581 C67.776,117.598 68.903,116.254 69.663,114.548 L95.592,54.521 C97.159,50.902 97.943,46.274 97.943,40.638 C97.943,29.678 94.381,20.319 87.258,12.564 Z"
+                />
+            </symbol>
+            <symbol viewBox="0 0 38 31" stroke="none" id="icon-pdf">
+                <text kerning="auto" font-family="Montserrat, sans-serif" font-size="10px" x="13px" y="18.937px">PDF</text>
+                <path fill-rule="evenodd" d="M25,23 L25,31 L-0,31 L-0,-0 L25,-0 L25,8 L38,8 L38,23 L25,23 ZM24,1 L1,1 L1,30 L24,30 L24,23 L10,23 L10,8 L24,8 L24,1 ZM37,9 L11,9 L11,22 L37,22 L37,9 Z" />
+            </symbol>
+        </svg>
+    </div>
+    <!--[if lt IE 10]><div class="browse-happy"><div class="container"><h2>Мы обнаружили, что вы используете <strong>устаревшую версию</strong> браузера Internet Explorer</h2><p>Из соображений безопасности этот сайт поддерживает Internet Explorer версии 10 и выше<br> Кроме того, этот и многие другие сайты могут отображаться <strong>некорректно</strong></p><p>Пожалуйста, обновите свой браузер по этой <a href="http://browsehappy.com/" target="_blank">ссылке</a><br> (мы рекомендуем <a href="http://www.google.com/chrome" target="_blank">Google Chrome</a>)</p></div></div><![endif]-->
+    <header class="header compensate-for-scrollbar">
+        <div class="header__top menu-popup">
+            <div class="container">
+                <div class="header__top-inner menu-popup__inner">
+                    <div class="header__top-info menu-popup__header">
+                        <button class="menu-popup__close-btn close-btn js-menu-popup-close" type="button"></button>
+                        <div class="menu-popup__header-info">
+                            <div class="header-info">
+                                <div class="header-info__schedule"><span class="header-info__schedule-text">10:00 <span>до</span> 22:00</span>
+                                </div>
+                                <div class="header-info__title">Гипермаркет&nbsp;Лента
+                                    <span>круглосуточно</span></div>
+                            </div>
+                        </div>
+                        <div class="header__search menu-popup__search">
+                            <div class="search">
+                                <div class="container">
+                                    <div class="search__inner">
+                                        <button class="search__close-btn close-btn js-search-close-btn" type="button"></button>
+                                        <form class="search__form js-validation-form">
+                                            <input class="search__input form-control" name="search" required="required" placeholder="НАЙТИ" autocomplete="off">
+                                            <button class="search__btn btn" type="submit">Поиск</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__top-content menu-popup__content">
+                        <div class="menu-popup__nav">
+                            <ul class="header__nav">
+                                <li class="header__nav-item"><a class="header__nav-btn header__nav-btn_location" href="#"><span class="header__nav-btn-text">Как добраться!</span></a>
+                                </li>
+                                <li class="header__nav-item"><a class="header__nav-btn header__nav-btn_scheme" href="#"><span class="header__nav-btn-text">Схема EL RIO</span></a>
+                                </li>
+                                <li class="header__nav-item"><a class="header__nav-btn" href="rent.html"><span class="header__nav-btn-text">Арендаторам</span></a>
+                                </li>
+                                <li class="header__nav-item"><a class="header__nav-btn" href="tel:7(846)219-33-05"><span class="header__nav-btn-text">+7 (846) 219-33-05</span></a>
+                                </li>
+                                <li class="header__nav-item header__nav-item_search">
+                                    <button class="header__nav-btn header__nav-btn_seacrh js-header-search-btn" type="button"><span class="header__nav-btn-text">Поиск</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-inner">
+                    <div class="header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <div class="header__menu-content">
+                            <ul class="menu">
+                                <li class="menu__item"><a class="menu__btn" href="#"><span class="menu__icon"><img src="img/icon-menu-01.png" alt=""></span><span class="menu__text"><span>Магазины</span></span></a>
+                                </li>
+                                <li class="menu__item"><a class="menu__btn" href="#"><span class="menu__icon"><img src="img/icon-menu-02.png" alt=""></span><span class="menu__text" data-alt-text="Еда"><span>Кафе и рестораны</span></span></a>
+                                </li>
+                                <li class="menu__item"><a class="menu__btn" href="#"><span class="menu__icon"><img src="img/icon-menu-03.png" alt=""></span><span class="menu__text"><span>Развлечения</span></span></a>
+                                </li>
+                                <li class="menu__item"><a class="menu__btn" href="#"><span class="menu__icon"><img src="img/icon-menu-04.png" alt=""></span><span class="menu__text"><span>Для детей</span></span></a>
+                                </li>
+                                <li class="menu__item"><a class="menu__btn" href="#"><span class="menu__icon"><img src="img/icon-menu-05.png" alt=""></span><span class="menu__text" data-alt-text="Новости"><span>Новости и акции</span></span></a>
+                                </li>
+                                <li class="menu__item"><a class="menu__btn" href="#"><span class="menu__icon"><img src="img/icon-menu-06.png" alt=""></span><span class="menu__text"><span>Кинотеатр</span></span></a>
+                                </li>
+                                <li class="menu__item"><a class="menu__btn" href="#"><span class="menu__icon"><img src="img/icon-menu-07.png" alt=""></span><span class="menu__text" data-alt-text="Услуги"><span>Сервисы и услуги</span></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__menu-footer">
+                            <div class="header__menu-item">
+                                <div class="header__menu-btn header__menu-btn_search js-mobile-search-btn"><span class="header__menu-icon"><img src="img/icon-menu-08.png" alt=""></span><span class="header__menu-text">Поиск</span>
+                                </div>
+                            </div>
+                            <div class="header__menu-item">
+                                <div class="header__menu-btn header__menu-btn_more js-mobile-menu-btn"><span class="header__menu-icon"><img src="img/icon-menu-09.png" alt=""></span><span class="header__menu-text">Еще</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-header">
+        <div class="container">
+            <div class="mobile-header__inner">
+                <div class="mobile-header__logo">
+                    <a class="mobile-logo" href="index.html">
+                        <img src="img/mobile-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="mobile-header__info">
+                    <div class="header-info">
+                        <div class="header-info__schedule"><span class="header-info__schedule-text">10:00 <span>до</span> 22:00</span>
+                        </div>
+                        <div class="header-info__title">Гипермаркет&nbsp;Лента
+                            <span>круглосуточно</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container container_s">
+            <div class="form-block">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">Заявка на аренду</li>
+                </ul>
+                <div class="form-block__content">
+                    <h2 class="form-block__title h2"><span>Заявка на аренду</span></h2>
+                    <p class="form-block__download">Скачать файл с анкетой в <a href="upload/anketa.docx" download>.word</a></p>
+                    <form class="js-validation-form form-request">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="name-company" required placeholder="* Название компании">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="type" required placeholder="* Вид деятельности">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="trademark" placeholder="Торговая марка">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="count" placeholder="Количество и местонахождение уже существующих торговых точек">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="size" placeholder="Желаемый размер арендуемой площади">
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="name" required placeholder="* Ваше имя">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control phone-field" type="tel" name="phone" id="phone" required placeholder="* Телефон">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" name="email" required placeholder="* Ваш e-mail">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-group__label">Презентация вашей компании в форматах: ppt, pptx, pdf, doc, docx</label>
+                                    <input class="form-control js-styler" type="file" data-browse="Загрузить файлы" data-placeholder="Выберите файлы до 5 МБ" multiple>
+                                    <div class="form-control__result"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="form-block__obligation">Поля со звёздочкой (*) обязательны для заполнения.</p>
+                        <div class="form-block__footer">
+                            <button class="popup-window__btn btn" type="submit">Отправить</button>
+                        </div>
+                        <div class="form-block__aggreement">Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;, <br> вы&nbsp;даете <a href="#">согласие на&nbsp;обработку персональных данных.</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-block">
+        <a class="social-block__btn" href="#">
+            <svg class="icon">
+                <use xlink:href="#icon-instagram"></use>
+            </svg>
+        </a>
+        <a class="social-block__btn" href="#">
+            <svg class="icon">
+                <use xlink:href="#icon-vkontakte"></use>
+            </svg>
+        </a>
+        <a class="social-block__btn" href="#">
+            <svg class="icon">
+                <use xlink:href="#icon-facebook"></use>
+            </svg>
+        </a>
+        <a class="social-block__btn" href="#">
+            <svg class="icon">
+                <use xlink:href="#icon-youtube"></use>
+            </svg>
+        </a>
+    </div>
+    <footer class="footer">
+        <button class="up-btn" type="button"></button>
+        <div class="footer__bg"></div>
+        <div class="footer__search">
+            <div class="search">
+                <div class="container">
+                    <div class="search__inner">
+                        <button class="search__close-btn close-btn js-search-close-btn" type="button"></button>
+                        <form class="search__form js-validation-form">
+                            <input class="search__input form-control" name="search" required="required" placeholder="НАЙТИ" autocomplete="off">
+                            <button class="search__btn btn" type="submit">Поиск</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__content">
+            <div class="container container_s">
+                <div class="footer__content-inner">
+                    <div class="footer__main">
+                        <div class="footer__left-section">
+                            <ul class="footer__nav">
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Акции</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">О Нас</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Карьера</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__center-section">
+                            <div class="footer__btns">
+                                <button class="footer__btn footer__btn_search js-footer-search-btn" type="button"><span class="footer__btn-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="footer__right-section">
+                            <ul class="footer__nav">
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Арендатором</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Рекламодателям</a>
+                                </li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Вакансии арендаторов</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__bottom-item footer__bottom-item_copyright">© 2018 - 2020 «EL RIO» Все права защищены</div>
+                        <div class="footer__bottom-item footer__bottom-item_policy"><a href="#">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup-window" id="subscribe-window">
+        <div class="popup-window__content">
+            <div class="popup-window__title h2">Хотите больше полезной информации?</div>
+            <div class="popup-window__lead">Оставьте свою почту, и мы отправим вам самые интересные материалы!</div>
+            <div class="popup-window__form-field">
+                <form class="subscribe-form">
+                    <input class="subscribe-form__input form-control" type="email" name="subscribe" placeholder="Адрес электронной почты" required="required">
+                    <button class="subscribe-form__btn btn" type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="popup-window__aggreement">Нажимая на кнопку «Отправить», вы даете <a href="#">согласие на обработку персональных данных.</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
