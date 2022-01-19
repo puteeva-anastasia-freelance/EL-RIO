@@ -2222,6 +2222,12 @@ textarea.form-control {
 		display: flex;
 }
 
+@media (max-width: 767.98px){
+	.search__form {
+			padding-right: 0;
+	}
+}
+
 .search__btn{
 	background-color: transparent;
 	border: 1px solid #fff;
